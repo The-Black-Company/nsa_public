@@ -9,7 +9,7 @@ sudo apt update
 sudo apt install php8.0 
 sudo apt install apache2 libapache2-mod-php8.0 
 sudo apt install php8.0-{mysql,imap,ldap,xml,curl,mbstring,zip} 
-
+sudo apt install php php-cgi php-mysqli php-pear php-mbstring php-gettext libapache2-mod-php php-common php-phpseclib php-mysql -y
 
 
 
@@ -21,6 +21,6 @@ sudo cp composer.phar /usr/local/bin/composer
 
 
 
-curl -1sLf 'https://dl.cloudsmith.io/public/symfony/stable/setup.deb.sh' | sudo -E bash
 
+curl -1sLf 'https://dl.cloudsmith.io/public/symfony/stable/setup.deb.sh' | sudo -E bash
 sudo apt install symfony-cli
